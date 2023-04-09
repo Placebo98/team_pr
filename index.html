@@ -5,49 +5,63 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="./css/mobile.css" />
+		<link rel="stylesheet" href="./css/tablet.css" />
+		<link rel="stylesheet" href="./css/desktop.css" />
 	</head>
 	<body>
 		<header class="header">
 			<div class="container header-container">
 				<a href="" class="header-logo"
 					>SIMPLY CHOCOLATE
-					<svg>
+					<svg class="header-logo-icon" width="21" height="21">
 						<use href="./images/icons.svg.svg#icon-logo"></use>
 					</svg>
 				</a>
 				<button type="button" class="menu-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu"
-					><svg>
+					><svg width="24" height="16" aria-label="mobile-menu">
 						<use href="./images/icons.svg.svg#icon-burger"></use>
 					</svg>
 				</button>
-				<div class="heaader-nav-wrap">
+				<div class="header-nav-wrap js-menu-container" id="mobile-menu">
 					<button type="button" class="header-btn-menu-close js-close-menu">
-						<svg>
+						<svg width="12" height="12">
 							<use href="./images/icons.svg.svg#icon-close"></use>
 						</svg>
 					</button>
-					<nav>
-						<ul>
-							<li><a href="">Home</a></li>
-							<li><a href="">How it’s made?</a></li>
-							<li><a href="">Our products</a></li>
-							<li><a href="">Top sellers</a></li>
-							<li><a href="">Chocolate is loved</a></li>
+					<nav class="header-navigation">
+						<ul class="header-list list">
+							<li class="header-item"><a href="#Home" class="header-link link">Home</a></li>
+							<li class="header-item"><a href="#how-it’s-made" class="header-link link">How it’s made?</a></li>
+							<li class="header-item"><a href="#our-products" class="header-link link">Our products</a></li>
+							<li class="header-item"><a href="#top-sellers" class="header-link link">Top sellers</a></li>
+							<li class="header-item"><a href="#chocolate-is-loved" class="header-link link">Chocolate is loved</a></li>
 						</ul>
 					</nav>
 					<div class="mobile-social">
-						<ul>
-							<li>
-								<a href="">
-									<svg>
-										<use href="./images/icons.svg.svg#icon-instagram"></use>
+						<ul class="mobile-social-list list">
+							<li class="mobile-social-item">
+								<a
+									href="https://www.instagram.com/"
+									class="mobile-social-link link"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<svg class="mobil-social-icon" width="20" height="20">
+										<use href="./images/icons.svg.svg#icon-header-instagram"></use>
 									</svg>
 								</a>
 							</li>
-							<li>
-								<a href="">
-									<svg>
-										<use href="./images/icons.svg.svg#icon-twitter"></use>
+							<li class="mobile-social-item">
+								<a
+									href="https://twitter.com/twitter?lang=uk"
+									class="mobile-social-link link"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<svg class="mobil-social-icon" width="20" height="20">
+										<use href="./images/icons.svg.svg#icon-header-twitter"></use>
 									</svg>
 								</a>
 							</li>
@@ -56,5 +70,6 @@
 				</div>
 			</div>
 		</header>
+		<script src="./js/mobile-menu.js"></script>
 	</body>
 </html>
